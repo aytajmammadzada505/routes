@@ -53,3 +53,21 @@ function App() {
 }
 export default App;
 
+//task 4 
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import Checkout from './Checkout';
+import Success from './success';
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/checkout" element={<Checkout />} />
+        <Route path="/success" element={<Success />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+export default App;
+
