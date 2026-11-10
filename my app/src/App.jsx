@@ -71,3 +71,22 @@ function App() {
 
 export default App;
 
+
+//task 5
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Users from './Users';
+import Detail from './Detail';
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/users" element={<Users />} />
+        <Route path="/users/:id" element={<Detail />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+export default App;
+
