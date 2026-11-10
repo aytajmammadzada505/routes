@@ -1,3 +1,4 @@
+//task 5
 import { useParams, useNavigate } from "react-router-dom";
 
 function Detail() {
