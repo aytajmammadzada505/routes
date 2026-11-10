@@ -32,3 +32,24 @@ function App() {
 }
 
 export default App;
+
+
+//task 3
+import { Routes, Route, BrowserRouter} from 'react-router-dom';
+import Movies from './Movies';
+import MovieDetail from './MovieDetail';
+
+function App() {
+  return (
+    <BrowserRouter>
+      <div>
+        <Routes>
+          <Route path="/movies" element={<Movies />} />
+          <Route path="/movie/:id" element={<MovieDetail />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
+  );
+}
+export default App;
+
